@@ -1,0 +1,54 @@
+<!--
+<style>
+    .post-preview img.post-eyecatch {
+        display: inline-block;
+
+        object-fit: cover;
+}
+</style>
+-->
+<style>
+    .post-content-preview {
+        font-style: normal;
+    }
+    .post-preview .post-meta {
+        margin-top: 1em;
+        font-style: normal;
+        font-size: 1em;
+        font-family: -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    }
+</style>
+<!-- post list -->
+{{ range $index, $element := $.Paginator.Pages }}
+<div class="post-preview">
+    <a href="{{ .Permalink }}">
+        <h2 class="post-title">
+            {{ .Title }}
+        </h2>
+	{{with .Params.subtitle }}
+        <h3 class="post-subtitle">
+            {{ . }}
+        </h3>
+	{{ end }}
+        <div class="post-content-preview">
+        <!--
+        <img class="post-eyecatch" src="{{ .Params.Eyecatch }}"/>
+        -->
+	{{ with .Description }}
+            {{ . }}
+        {{ else }}
+            {{ .Summary}}
+       {{ end }}
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by {{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }} {{ .Date.Format "Monday, January 2, 2006" }}
+    <!-- Don't show "Last Modified on" if update happened on the same day. -->
+    {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
+    <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }}
+    {{ end }}
+    </p>
+
+</div>
+<hr>
+{{ end }}

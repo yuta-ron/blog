@@ -1,0 +1,11 @@
+baseURL = "https://blog.yutaron.tokyo/"
+languageCode = "ja"
+title = "ざっと書くところ"
+theme = "hugo-theme-cleanwhite"
+
+[params]
+  author = "yutaron"
+  image_404 = "/image/404.png"
+  header_image = "/image/header.png"
+	customCSS = ["/css/custom.css"]
+  showtoc = false
