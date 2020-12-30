@@ -4,12 +4,12 @@ figure.center {
 figure.center img {
   margin: 0 auto;
 }
-
+/* 
 html body {
   color: red;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif !important;
 }
-/* @media all and (-ms-high-contrast: none)  {
+@media all and (-ms-high-contrast: none)  {
   html {
     font-family: Verdana, Meiryo, sans-serif !important;
   }
