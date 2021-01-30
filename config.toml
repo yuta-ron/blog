@@ -1,11 +1,46 @@
-baseURL = "https://blog.yutaron.tokyo/"
+baseurl = "https://example.com"
 languageCode = "ja"
 title = "ざっと書くところ"
-theme = "hugo-theme-cleanwhite"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/ribice\">yuta-ron</a> 2021"
+googleAnalytics = ""
+Paginate = 5 # Number of posts per page
+enableRobotsTXT = true
 
-[params]
-  author = "yutaron"
-  image_404 = "/image/404.png"
-  header_image = "/image/header.png"
-	customCSS = ["/css/custom.css"]
-  showtoc = false
+[params.rss] # Adding this tag enables RSS feed
+includeContent = true # Includes whole content in rss
+authorName = "Yutaro Nishi" # Author full name
+authorEmail = "jan.joqr@gmail.com" # Author email
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+codeCopy = true # Add copy button above code blocks
+taxonomiesCount = true # Add taxonomies count
+
+[params.opengraph.twitter]
+page = "januaryCOM" # Twitter Page username. If not set, params.social.twitter will be used.
+
+[params.social]
+twitter = "januaryCOM"
+github = "yuta-ron"
+linkedin = "yutaro-nishi-b74090170"
+facebook = "100028405416669"
+instagram = ""
+codepen = ""
+rss = "index.xml" # Add this to show RSS button in social.
+
+[params.social.config]
+platforms = ["github","facebook","twitter","linkedin"]
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
