@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 baseurl = "https://blog.yutaron.tokyo"
+=======
+baseurl = "https://example.com"
+>>>>>>> ea06c6d... change new theme
 languageCode = "ja"
 title = "ざっと書くところ"
 theme = "kiss"
