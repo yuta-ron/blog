@@ -3,7 +3,7 @@ languageCode = "ja"
 title = "ざっと書くところ"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/ribice\">yuta-ron</a> 2021"
-googleAnalytics = ""
+googleAnalytics = "UA-123534006-2"
 Paginate = 5 # Number of posts per page
 enableRobotsTXT = true
 
