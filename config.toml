@@ -4,7 +4,7 @@ title = "ざっと書くところ"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/yuta-ron\">yuta-ron</a> 2023"
 googleAnalytics = "UA-123534006-2"
-Paginate = 5 # Number of posts per page
+pagination.pagerSize = 5
 enableRobotsTXT = true
 
 [params.rss] # Adding this tag enables RSS feed
