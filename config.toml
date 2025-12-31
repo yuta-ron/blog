@@ -4,8 +4,10 @@ title = "ざっと書くところ"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/yuta-ron\">yuta-ron</a> 2023"
 googleAnalytics = "G-3WTS215HYN"
-pagination.pagerSize = 20
 enableRobotsTXT = true
+
+[pagination]
+pagerSize = 20
 
 [params.rss] # Adding this tag enables RSS feed
 includeContent = true # Includes whole content in rss
