@@ -3,8 +3,8 @@ languageCode = "ja"
 title = "ざっと書くところ"
 theme = "kiss"
 copyright = "&copy; <a href=\"https://github.com/yuta-ron\">yuta-ron</a> 2023"
-googleAnalytics = "UA-123534006-2"
-pagination.pagerSize = 5
+googleAnalytics = "G-3WTS215HYN"
+pagination.pagerSize = 20
 enableRobotsTXT = true
 
 [params.rss] # Adding this tag enables RSS feed
