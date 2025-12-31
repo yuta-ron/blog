@@ -24,8 +24,11 @@ related = true # Includes related articles at the bottom of the article
 codeCopy = true # Add copy button above code blocks
 taxonomiesCount = true # Add taxonomies count
 
+[params.opengraph.twitter]
+page = "januaryCOM" # Twitter Page username. If not set, params.social.twitter will be used.
 
 [params.social]
+twitter = "januaryCOM"
 github = "yuta-ron"
 linkedin = "yutaro-nishi-b74090170"
 facebook = "100028405416669"
@@ -34,7 +37,7 @@ codepen = ""
 rss = "index.xml" # Add this to show RSS button in social.
 
 [params.social.config]
-platforms = ["github","facebook","linkedin"]
+platforms = ["github","facebook","twitter","linkedin"]
 
 [taxonomies]
 tag ="tags"
